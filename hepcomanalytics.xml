@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Hepcom Google Analytics</name>
+	<author>Chris Pappas</author>
+	<creationDate>2010-09-30</creationDate>
+	<copyright>Copyright 2010 Hep Communications. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>cpappas@hepcom.ca</authorEmail>
+	<authorUrl>www.hepcommunications.com</authorUrl>
+	<version>1.1</version>
+	<description>This Plugin adds the Tracking Code for Google Analytics directly before the closing head html tag.</description>
+	<files>
+		<filename plugin="hepcomanalytics">hepcomanalytics.php</filename>
+	</files>
+	<params>
+		<param 
+			name="web_property_id" 
+			type="text" 
+			default="" 
+			label="Web Property ID" 
+			description="This is the Web Property ID provided by Google. The format is: UA-XXXXXXX-X"
+		/>
+	</params>
+</install>
